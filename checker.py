@@ -70,7 +70,7 @@ if feedback:
 # Save result
 save = input("\nDo you want to save this result? (y/n): ").lower()
 if save == "y":
-    with open("password_report.txt", "w") as file:
+    with open("password_report.txt", "w", encoding="utf-8") as file:
         file.write(f"Password Strength: {strength}\n")
         file.write(f"Estimated Crack Time: {crack_time}\n")
         if is_common:
